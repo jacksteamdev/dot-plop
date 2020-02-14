@@ -1,0 +1,1 @@
+> If a generator should not run in the current situation, throw an error from the `when` method of an inquirer prompt.
