@@ -52,7 +52,7 @@ export default function(plop: NodePlopAPI) {
       > & { excluded: string[] }
       delete generatorModule.default
 
-      Object.entries(module)
+      Object.entries(generatorModule)
         .filter(([key]) => {
           return !excluded.includes(key)
         })
