@@ -8,6 +8,6 @@ require('ts-node').register({
   transpileOnly: true,
 })
 
-export default function(plop: NodePlopAPI) {
+module.exports = function(plop: NodePlopAPI) {
   autoDiscoverGenerators(plop)
 }
