@@ -1,7 +1,7 @@
 {
   "name": "@bumble/dot-plop",
   "version": "0.1.5",
-  "description": "PlopJS by convention, not configuration. First class TypeScript support.",
+  "description": "A simple approach to PlopJS with first class TypeScript support and a one-line plopfile",
   "author": "Jack and Amy Steam <jacksteamdev@gmail.com>",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
@@ -11,7 +11,8 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "preversion": "tsc"
   },
   "keywords": [
     "plopjs",
