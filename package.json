@@ -20,6 +20,9 @@
     "typescript",
     "plopfile"
   ],
+  "peerDependencies": {
+    "plop": "^2.5.3"
+  },
   "dependencies": {
     "cross-env": "^6.0.3",
     "delay": "^4.3.0",
