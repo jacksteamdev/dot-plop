@@ -1,5 +1,4 @@
-import { NodePlopAPI } from 'plop'
-import autoDiscoverGenerators from './autoDiscoverGenerators'
+import { autoDiscover } from './autoDiscover'
 
 const { compilerOptions } = require('../tsconfig.json')
 
@@ -8,6 +7,4 @@ require('ts-node').register({
   transpileOnly: true,
 })
 
-module.exports = function(plop: NodePlopAPI) {
-  autoDiscoverGenerators(plop)
-}
+module.exports = autoDiscover
