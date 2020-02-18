@@ -15,7 +15,7 @@ const paths = {
 function loadModulesInDir<T>(dirPath: string): [string, T][] {
   return existsSync(dirPath)
     ? readdirSync(dirPath).flatMap((p) => {
-        const { excluded = [], ...elements } = importCwd(p) as Record<
+        const { excluded = [], ...elements } = importCwd(join(dirPath, p)) as Record<
           string,
           T
         > & {
