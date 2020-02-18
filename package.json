@@ -1,6 +1,6 @@
 {
   "name": "@bumble/dot-plop",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "A simple approach to PlopJS with first class TypeScript support and a one-line plopfile",
   "author": "Jack and Amy Steam <jacksteamdev@gmail.com>",
   "main": "./dist/index.js",
