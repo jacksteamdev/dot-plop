@@ -37,20 +37,20 @@ export function autoDiscover(plop: NodePlopAPI): void {
 
   loadModulesInDir<CustomActionFunction>(paths.actions).forEach(
     ([key, actionFn]) => {
-      plop.setActionType(key, callIfFn(actionFn))
+      plop.setActionType(key, actionFn)
     },
   )
 
   /* ----------------- LOAD HANDLEBARS HELPERS ----------------- */
 
   loadModulesInDir<HandlebarsHelper>(paths.helpers).forEach(([key, helper]) => {
-    plop.setHelper(key, callIfFn(helper))
+    plop.setHelper(key, helper)
   })
 
   /* ------------------- LOAD INQUIRER PROMPT ------------------ */
 
   loadModulesInDir<InquirerPrompt>(paths.prompts).forEach(([key, prompt]) => {
-    plop.setPrompt(key, callIfFn(prompt))
+    plop.setPrompt(key, prompt)
   })
 
   /* ------------------------ FUNCTIONS ------------------------ */
