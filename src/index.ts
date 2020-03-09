@@ -8,7 +8,7 @@ const { compilerOptions: co1 = {} } = (importCwd.silent(tsconfig) ||
   {}) as { compilerOptions?: object }
 
 // Get the basic required compiler options
-const { compilerOptions: co2 } = require('./tsconfig.default.json')
+const { compilerOptions: co2 } = require('../tsconfig.default.json')
 
 require('ts-node').register({
   // Overwrite any settings that might cause failure

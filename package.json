@@ -8,11 +8,12 @@
   "files": [
     "dist",
     "types",
-    "tsconfig.json"
+    "tsconfig.default.json"
   ],
   "scripts": {
     "test": "echo no tests yet",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "postpublish": "rm -rf node_modules package-lock.json && pnpm i"
   },
   "keywords": [
     "plopjs",
