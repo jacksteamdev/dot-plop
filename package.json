@@ -1,5 +1,5 @@
 {
-  "name": "@bumble/dot-plop",
+  "name": "dot-plop",
   "version": "0.3.0",
   "description": "A simple approach to PlopJS with first class TypeScript support and a one-line plopfile",
   "author": "Jack and Amy Steam <jacksteamdev@gmail.com>",
@@ -11,8 +11,8 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "test": "jest",
-    "preversion": "tsc"
+    "test": "echo no tests yet",
+    "prepublish": "tsc"
   },
   "keywords": [
     "plopjs",
@@ -20,9 +20,6 @@
     "typescript",
     "plopfile"
   ],
-  "peerDependencies": {
-    "plop": "^2.6.0"
-  },
   "dependencies": {
     "cross-env": "^7.0.1",
     "delay": "^4.3.0",
