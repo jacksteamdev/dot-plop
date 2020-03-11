@@ -11,8 +11,10 @@
     "tsconfig.default.json"
   ],
   "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
     "test": "echo no tests yet",
-    "prepublish": "tsc",
+    "prepublish": "pnpm run build",
     "postpublish": "rm -rf node_modules package-lock.json && pnpm i"
   },
   "keywords": [
