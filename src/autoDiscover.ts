@@ -22,6 +22,14 @@ function loadModulesInDir<T>(dirPath: string): [string, T][] {
 }
 
 export function autoDiscover(plop: NodePlopAPI): void {
+  function callIfFn(value: any) {
+    if (typeof value === 'function') {
+      return value(plop)
+    } else {
+      return value
+    }
+  }
+
   if (!existsSync(paths.dotPlop))
     throw new Error(`could not find ${paths.dotPlop}`)
 
@@ -52,14 +60,4 @@ export function autoDiscover(plop: NodePlopAPI): void {
   loadModulesInDir<InquirerPrompt>(paths.prompts).forEach(([key, prompt]) => {
     plop.setPrompt(key, prompt)
   })
-
-  /* ------------------------ FUNCTIONS ------------------------ */
-
-  function callIfFn(value: any) {
-    if (typeof value === 'function') {
-      return value(plop)
-    } else {
-      return value
-    }
-  }
 }
