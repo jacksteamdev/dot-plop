@@ -8,6 +8,14 @@
     "typescript",
     "plopfile"
   ],
+  "homepage": "https://github.com/jacksteamdev/dot-plop",
+  "bugs": {
+    "url": "https://github.com/jacksteamdev/dot-plop/issues"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/jacksteamdev/dot-plop.git"
+  },
   "author": "Jack and Amy Steam <jacksteamdev@gmail.com>",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
