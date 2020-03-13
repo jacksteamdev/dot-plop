@@ -12,6 +12,7 @@
     "strict": true,
     "target": "es2018",
     "outDir": "dist",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "sourceMap": true
   }
 }
