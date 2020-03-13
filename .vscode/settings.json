@@ -6,9 +6,7 @@
   "eslint.enable": true,
   "eslint.validate": [
     "javascript",
-    "javascriptreact",
     "typescript",
-    "typescriptreact"
   ],
   "explorer.sortOrder": "type",
   "jestrunner.configPath": ".plop/jest.config.js",

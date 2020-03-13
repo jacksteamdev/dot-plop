@@ -43,21 +43,6 @@ const rules = {
 /*                          OVERRIDES                          */
 /* ----------------------------------------------------------- */
 
-const react = {
-  files: ['**/*.tsx'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-  ],
-  rules: {
-    ...rules,
-    'no-restricted-globals': [1, 'jest', 'it', 'test', 'expect', 'describe'],
-  },
-  plugins: ['react'],
-}
-
 const jest = {
   files: [
     '**/*.test.ts',
@@ -111,9 +96,8 @@ const ts = {
     ...rules,
     'no-restricted-globals': [1, 'jest', 'it', 'test', 'expect', 'describe'],
   },
-  // This order is important: react, then jest
   // File matching patterns should go from general to specific
-  overrides: [react, jest],
+  overrides: [jest],
 }
 
 /* ----------------------------------------------------------- */
