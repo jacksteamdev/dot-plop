@@ -21,7 +21,7 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "prepublishOnly": "npm run build",
-    "postpublish": "rm -rf node_modules package-lock.json && npm i",
+    "postpublish": "rm -rf node_modules package-lock.json && pnpm i",
     "test": "echo no tests yet"
   },
   "dependencies": {
