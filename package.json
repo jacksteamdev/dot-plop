@@ -14,8 +14,8 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "test": "echo no tests yet",
-    "prepublish": "pnpm run build",
-    "postpublish": "rm -rf node_modules package-lock.json && pnpm i"
+    "prepublishOnly": "npm run build",
+    "postpublish": "rm -rf node_modules package-lock.json && npm i"
   },
   "keywords": [
     "plopjs",
