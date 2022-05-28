@@ -33,7 +33,7 @@
     "test": "echo no tests yet"
   },
   "dependencies": {
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "import-cwd": "^3.0.0",
     "plop": "^2.6.0",
     "ts-node": "^8.6.2",
